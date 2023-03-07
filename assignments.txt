@@ -1,0 +1,24 @@
+1. Spawn Applications
+2. Collect metrics
+3. Write data to file
+4. Cleanup processes and applications
+
+Philip: collect process level metrics
+	process level:
+	% CPU usage and % memory per process
+	use ps command
+
+Jonah: collect system level metrics
+	system level: 
+	network bandwidth, hard disk access rates, hard disk utilization
+	use ifstat for bandwidth
+	iostat for hard disk write
+	hard disk utilization uses the df tool
+
+Ben: spawn and cleanup the processes
+	each application takes an IP address for an argument
+
+Overview of Functiion:
+	samples network data every second
+	collects the network data every 5 seconds
+	collects all process and system data every 5 seconds
